@@ -25,7 +25,7 @@ DB_REPL_PASSWORD = os.getenv('DB_REPL_PASSWORD')
 DB_SSH_USER = os.getenv('DB_SSH_USER')
 DB_SSH_PASSWORD = os.getenv('DB_SSH_PASSWORD')
 
-logging.basicConfig(filename='logfile.txt', format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.DEBUG)
+logging.basicConfig(filename='/app/logfile.txt', format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.DEBUG)
 
 def find_phone_number_command(update: Update, context):
     update.message.reply_text('Введите текст для поиска телефонных номеров: ')
